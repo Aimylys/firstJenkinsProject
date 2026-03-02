@@ -40,7 +40,7 @@ pipeline {
         stage('📦 Package') {
             steps {
                 echo '📦 Génération du fichier JAR...'
-                sh 'mvn package -DskipTests'
+                bat 'mvn package -DskipTests'
             }
         }
         
